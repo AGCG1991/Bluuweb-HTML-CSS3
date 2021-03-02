@@ -12,4 +12,30 @@
 nav {
     background-color: rebeccapurple;
     padding: 10px;
+    display: flex;  
+    justify-content: space-around;
+}
+.nav-boton{
+    background: salmon;
+    color: #fff;
+    padding: 10px 0px;
+    border: 2px solid #fff;
+    display:none;
+}
+
+@media (max-width: 600px) /* Modifico entre 0 y 600 px*/
+{
+    nav { /* Coge todos los estilos ya creados en el NAV, excepto lo que modifiquemos EXPLICITAMENTE*/
+        background: black;
+        flex-direction: column; /*Tomo un aspecto de menú en columnas cuando el tamaño se reduce*/
+    }
+    .nav-enlace {
+        margin: 10px 0px;
+    }
+    .nav-boton {
+        display: inline-block;
+    }
+    .desaparece {
+        display: none;
+    }
 }

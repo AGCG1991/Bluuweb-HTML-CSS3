@@ -1,0 +1,10 @@
+.botonaco {
+    background: #404969;
+    color: #bde4f4;
+}
+.botonaco:hover { /*Cuando el ratón pasa por el botón, cambia de color*/
+    background: #ff7f50;
+}
+.botonaco:active{ /*Cuando pincho en el botón vuelve a cambiar de color*/
+    background: #ff4273;
+}
