@@ -1,0 +1,15 @@
+h1 {
+    background: #Ec610a;
+    /* margin-left: 50px;
+    margin-bottom: 200px; */
+    /* margin: 100px; Margen a los 4 costados */ 
+    /* margin: 200px 100px; Margen arriba y abajo (primera componente), derecha e izq (segunda componente)  */
+    margin: 100px 10px 20px 500px;
+    /* Funciona como las agujas de un reloj de arriba derecha abajo e izquierda*/
+
+
+}
+.parrafo{
+    background: #a40a3c;
+    padding: 100px;
+}

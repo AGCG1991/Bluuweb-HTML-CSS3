@@ -1,0 +1,15 @@
+.nav-enlace{
+    background: salmon;
+    color: blanchedalmond;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none; /*Se quita la línea de subrayado*/
+}
+.nav-enlace:hover{
+    /*Con esto cambiamos la propiedad cuando el ratón pase por encima*/
+    background: violet;
+}
+nav {
+    background-color: rebeccapurple;
+    padding: 10px;
+}

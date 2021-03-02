@@ -1,0 +1,8 @@
+.Salmon{
+    background: salmon;
+    display : inline-block;
+} 
+.ancla {
+    background: violet;
+    display: block;
+}
