@@ -4,6 +4,7 @@
 }
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
 .text_center {
     text-align: center;
@@ -16,7 +17,41 @@
     background: rgb(238,238,238);
     color: #333;
     border : 1px solid #333;
-    margin: 10px;
+    margin: 0 auto; 
     padding: 10px;
     border-radius:5px;
+    box-shadow: 10px 10px 5px gray;
+     /*Primer valor Sombras EJE X(DERECHO), SEGUNDO VALOR EJE Y (abajo). SI LE PONGO VALORES NEGATIVOS ES EN EL LADO CONTRARIO*/
+    /*Tercer valor , el degradado*/
+    width: 23%;
+    box-sizing: border-box;
+    /*con box-sizing: border-box incluyo en los cálculos el with y el padding, pero no entra el margin. Habría que ponerlo en auto*/
+   
+}
+.btn-precio {
+    background: salmon;
+    display: block ; /* Convierto en Bloque*/
+    padding: 10px;
+    color: #fff;
+    text-decoration: none; /*Le quitamos el subrayado al texto*/
+    border-radius: 3px; /*Redondeamos los bordes*/
+    margin-bottom: 10px; /*Margen Inferior*/
+}
+.btn-precio:hover{
+    background-color: rgb(250,90,75);
+}
+
+@media (max-width: 1070px)
+{
+    .columna {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px)
+{
+    .columna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
