@@ -1,0 +1,158 @@
+*{
+    margin:0px ;
+    padding: 10px;
+    box-sizing: border-box; /*Para que las cajas no se desborden*/
+    
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.padre {
+    display: flex;
+    flex-flow: column nowrap;   /*No wrap para que se adapte */
+}
+    
+
+.header {
+    background: url(img/2.jpg);
+    /*Para retroceder en ruta usamos .../ */
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display:flex;
+    flex-flow: column nowrap;
+}
+    .menu {
+        background: rgba(0,0,0,.1);
+        display: flex;
+        flex-flow: row nowrap; /*Lo dejamos en row y nowrap para que se vea uno tras otro en la misma línea*/
+        height: 60px;
+        align-items: center;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+            /*añado un border botton, que quiere decir que es abajo, el primer parametro es 1 px de ancho, solido y el color*/
+    }
+        .logo {
+            
+            flex: 1 1 auto;
+            
+            /*Si hago un color: #fff no veré nada, porque es texto y tengo que decirle que se ponga blanco el ancla , para ello dentro de logo creo otra clase .logo a {} donde le indico esto*/
+        }
+            .logo a {
+                color: #fff;
+                font-size: 30px;
+                
+            }
+            .logo a:hover{
+                color: #333434;
+            }
+
+        .nav {
+            
+            flex: 5 1 auto;
+           
+
+        }
+            .nav a {
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+
+            }
+            .nav a:hover {
+                color: #343434;
+
+            }
+        .social {
+              
+              flex: 1 1 auto;
+              display: flex;
+              
+        } 
+            
+            .social a {
+                font-size: 18px;
+                color: #fff;
+                padding: 0 5px;
+            }
+            .social a:hover{
+                color: #343434;
+                
+            }
+    .texto-principal{
+            background: #f07b3f;
+        }
+            h1 {
+                background: #ffd460;
+            }
+
+
+
+.section {
+    background: #000;
+    display: flex;
+    
+}
+    .articulos  {
+        background: #4e4e64;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap; /*Si el contenedor no alcanza en espacio, pasa abajo las cajitas*/
+
+    }
+        .article {
+            background: #1f6cb0;
+            flex: 1 1 40%;
+        }
+        .navegacion {
+            background: #70a3c4;
+            flex: 1 1 100%;  /*Al ponerle el 100%, no hay espacio suficiente y salta a la siguiente línea*/
+        }
+    .aside{
+        background: #f73f52;
+        flex: 1 1 auto;
+        
+    }
+        .publicidad {
+            background: #ffea85;
+        }
+
+.footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+    .pie{
+        background: #e6af2e;
+        width: 300px;
+        
+    }
+@media all and (max-width: 800){
+
+    .section {
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and (max-width: 600){
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400){
+    .aside{
+        flex-direction: column;
+    }
+}

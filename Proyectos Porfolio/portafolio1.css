@@ -1,0 +1,21 @@
+
+.enlace {
+    background: salmon;
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+/* .menu-desplegable {
+    background: salmon;
+    color: #fff;
+    padding: 10px 0px;
+    
+} */
+nav {
+    background: rebeccapurple;
+    padding: 10px;
+    display:flex;
+    justify-content: space-around;
+}
